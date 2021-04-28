@@ -1,0 +1,101 @@
+html{ max-height: 100%
+      display: flex;
+}
+body{
+    font-family: Fira Sans, serif;
+    font-weight: 800;
+    background-color: #191919;
+    color: #fff;
+}
+p{
+  width: 200px;
+  position: relative;
+  left: 135px;
+  top: 5px;
+  font-size: 20px;
+  font-weight: 800;
+}
+.checkbox {
+  width: 120px;
+  height: 40px;
+  background: #333;
+  margin: 2% 5%;
+  border-radius: 50px;
+  position: relative;
+}
+.checkbox:before {
+  content: 'On';
+  position: absolute;
+  top: 12px;
+  left: 13px;
+  height: 2px;
+  color: #26ca28;
+  font-size: 16px;
+}
+.checkbox:after {
+  content: 'Off';
+  position: absolute;
+  top: 12px;
+  left: 84px;
+  height: 2px;
+  color: #111;
+  font-size: 16px;
+}
+.checkbox label {
+  display: block;
+  width: 52px;
+  height: 22px;
+  border-radius: 50px;
+  transition: all .5s ease;
+  cursor: pointer;
+  position: absolute;
+  top: 9px;
+  z-index: 1;
+  left: 12px;
+  background: #ddd;
+}
+.checkbox input[type=checkbox]:checked + label {
+  left: 60px;
+  background: #26ca28;
+}
+.check{
+ display: none; 
+}
+#length{
+  left: 35%;
+  width: 30%;
+  font-size: 25px;
+  border: 7px solid #333;
+  box-sizing: border-box;
+  border-radius: 10px;
+  text-align: center;
+  color: #26ca28;
+}
+#generate{
+  outline: none;
+  z-index: 1;
+  width: 40%;
+  height: 12%;
+  left: 30%;
+  background: #333;
+  border: 2px solid white;
+  box-sizing: border-box;
+  border-radius: 20px;
+  color: white;
+}
+#generate:active{
+  border: 2px solid #26ca28;
+}
+
+#infotext{
+  text-align: center;
+  position: relative;
+  font-size: 25px;
+  color: #333;
+}
+#password{
+  width: 100%;
+  text-align: center;
+  font-size: 2em;
+  color: #fff;
+}

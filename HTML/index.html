@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;800;900&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <h1 class="headline">Password Generator</h1>
+    </header>
+    <main>
+        <section>
+            <span>
+                <div class='container'>
+                    <div class="checkbox">
+                        <input class="check" type="checkbox" value="1" id="checkbox1" name="" />
+                        <label for="checkbox1"></label>
+                        <p>uppercase letters</p>
+                    </div>
+                    <div class="checkbox">
+                        <input class="check" type="checkbox" value="1" id="checkbox2" name="" />
+                        <label for="checkbox2"></label>
+                        <p>lowercase letters</p>
+                    </div>
+                    <div class="checkbox">
+                        <input class="check" type="checkbox" value="1" id="checkbox3" name="" />
+                        <label for="checkbox3"></label>
+                        <p>numbers</p>
+                    </div>
+                    <div class="checkbox">
+                        <input class="check" type="checkbox" value="1" id="checkbox4" name="" />
+                        <label for="checkbox4"></label>
+                        <p>symbols</p>
+                    </div>
+                    <br />
+                    <input type='number' id='length' placeholder="length"><br /><br />
+                    <input type='button' id='generate' value='generate' onclick="getvalues()">
+
+                    <div id="infotext">Your Password is:</div>
+            </span>
+            <div id="password"></div>
+            </div>
+        </section>
+    </main>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
